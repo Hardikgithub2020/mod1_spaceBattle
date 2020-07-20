@@ -10,12 +10,90 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                display: grid;
+                grid-template-columns: repeat(4,25vw);
+                grid-template-rows: repeat(4,25vh);
+                grid-gap: 1px;
+                
+            }
+            div{
+                
+               
+                overflow: auto;
+                background-color: cornflowerblue;
+            }
+           #div1{
+                grid-area: 1/1/4/2;
+                background-color: rgb(245, 1, 1);
+                color: white;
+                font-size: 2vw;
+                text-align: center;
+            }
+            #div2{
+                grid-area: 1/2/2/4;
+                background-color: gold;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+            }
+            #div3{
+                grid-area: 1/4/4/5;
+                background-color: green;
+                color: white;
+                font-size: 2vw;
+                text-align: center;
+            }
+            #div4{
+                grid-area: 4/1/5/5;
+                background-color:blue;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+            }
+            #div5{
+                grid-area: 2/2/4/4;
+            }
+        </style>
     </head>
     <body>
+        <div id="div1" > 
+            <h1>PLAYER</h1>
+            <p id="player"></p>
+        </div>
+
+        <div id="div2" > 
+            <p id="controls"></p>
+            <button onclick='spacebattle()'>START</button> 
+        </div>
+        <div id="div3" > 
+            <h1>Alien</h1>
+            <p id="spaceAlien"></p>
+        </div>
+
+        <div id="div4" >
+            <h2>Battle information</h2>
+            <h3>Enjoy this game in Chrome Console, It has 4- level. Once you finished all level Megaship arrived </h3>
+            <h4>Once you finished a level you get Diamonds and Missile as a reward</h4>
+            <h4>You can buy one missile by spending 5-Diamonds</h4>
+            <h5>You can not hold more then three Missiles</h5>
+            
+           
+           
+        </div>
+        <div id="div5" >
+        <p id='show'></p>
+        <p id="update"></p> 
+        </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <script src="js/script.js" async defer></script>
     </body>
 </html>
